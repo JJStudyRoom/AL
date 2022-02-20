@@ -1,5 +1,4 @@
 /** 연속 부분 수열2 */
-
 function solution (sum, arr) {
     let answer = 0
 
@@ -19,19 +18,6 @@ function solution (sum, arr) {
         }
     }
 
-
-    return answer
-}
-
-/** 연속 부분 수열2 */
-
-function solution2 (sum, arr) {
-    let answer = 0
-    let left = 0, right = 0
-
-    while(right < arr.length){
-        
-    }
 
     return answer
 }
