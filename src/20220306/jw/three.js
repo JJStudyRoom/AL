@@ -1,16 +1,4 @@
 //크레인 인형뽑기(카카오 기출)
-function selectDoll(select_list) {
-    let doll = 0;
-    for(let i = 0; i<select_list.length; i++){
-        if(select_list[i] > 0){
-            doll = select_list[i];
-            select_list.shift();
-            break;
-        }
-    } 
-
-    return doll 
-}
 function solution(board, moves){
     let answer = 0;
     let selected_list = [];
@@ -32,7 +20,7 @@ function solution(board, moves){
     //인형 뽑기
     for(let i=0; i<moves.length; i++) {
         let select = Number(moves[i]) - 1;
-        let doll = selectDoll(list[select]);
+        let doll = list[select].shift();
         if(doll > 0) {
             let last_doll = selected_list[selected_list.length-1];
 
