@@ -1,4 +1,4 @@
-/** 괄호문자제거 */
+/** 크레인 인형뽑기(카카오 기출) */
 const solution = (board) => (move) => {
     let answer = 0
     let stack = []
